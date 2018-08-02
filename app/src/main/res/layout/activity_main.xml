@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffcc00">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF00ccff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFccffcc"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:id="@+id/user_input_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="#ffccccff"/>
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:text="확인"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/result_rv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#FF000000">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>
